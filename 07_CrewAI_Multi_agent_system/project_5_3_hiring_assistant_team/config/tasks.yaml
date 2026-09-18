@@ -1,0 +1,124 @@
+resume_screening_task:
+  description: >
+    Analyze the following candidate resume against the target job.
+
+    Candidate Resume:
+    {resume_text}
+
+    Job Description:
+    {job_description}
+
+    Evaluate:
+
+    1. Candidate profile summary
+    2. Relevant experience
+    3. Relevant technical skills
+    4. Relevant projects
+    5. Strong areas
+    6. Weak or unclear areas
+    7. Missing evidence
+    8. Resume quality
+    9. Initial suitability signals
+
+    Requirements:
+    - Base the analysis only on evidence present in the resume.
+    - Do not invent qualifications or experience.
+    - Distinguish clearly between demonstrated skills and inferred skills.
+    - Do not make a final hiring decision.
+    - Highlight important evidence that a human reviewer should examine.
+
+  expected_output: >
+    A structured resume screening analysis containing candidate summary,
+    relevant experience, strengths, weaknesses, resume-quality observations,
+    and an initial evidence-based suitability assessment.
+
+  markdown: true
+
+
+skill_gap_analysis_task:
+  description: >
+    Compare the candidate information from the resume screening with
+    the target job requirements.
+
+    Candidate Resume:
+    {resume_text}
+
+    Job Description:
+    {job_description}
+
+    Resume Screening Context:
+    Use the output from the resume screening task.
+
+    Identify:
+
+    1. Matching skills
+    2. Partially matching skills
+    3. Missing skills
+    4. Important skill gaps
+    5. Relevant transferable skills
+    6. Evidence supporting the assessment
+    7. Candidate fit score from 0 to 100
+    8. Assistant-level shortlist recommendation
+
+    Requirements:
+    - Do not invent skills that are not supported by the resume.
+    - Explain the evidence behind the fit assessment.
+    - Do not make a final hiring decision.
+    - The shortlist recommendation is advisory only and should support
+      human review.
+
+  expected_output: >
+    A structured skill-gap analysis containing matching skills,
+    partial matches, missing skills, important gaps, fit score,
+    evidence, and an assistant-level shortlist recommendation.
+
+  markdown: true
+
+
+interview_question_task:
+  description: >
+    Design an interview plan using:
+
+    Candidate Resume:
+    {resume_text}
+
+    Job Description:
+    {job_description}
+
+    Resume Screening Context:
+    Use the resume screening output.
+
+    Skill Gap Analysis Context:
+    Use the skill gap analysis output.
+
+    Generate:
+
+    1. Technical questions
+       - 5 questions
+
+    2. Project-based questions
+       - 3 questions
+
+    3. Scenario-based questions
+       - 3 questions
+
+    4. Behavioral questions
+       - 3 questions
+
+    5. Skill-gap questions
+       - Questions specifically targeting the most important gaps
+
+    For each section, explain what the interviewer should evaluate.
+
+    Requirements:
+    - Keep questions specific to the role.
+    - Base questions on evidence from the resume.
+    - Do not ask questions about information that is not relevant to the role.
+    - Use the identified skill gaps to design targeted validation questions.
+    - Avoid making hiring decisions.
+
+  expected_output: >
+    A complete role-specific interview question set grouped by category,
+    with evaluation guidance for each category.
+
+  markdown: true

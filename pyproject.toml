@@ -1,0 +1,29 @@
+[project]
+name = "build-ai-agents-crewai-langgraph-openai-sdk-autogen-mcp-deesa-technologies"
+version = "0.1.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "crewai==1.15.21",
+    "crewai-tools==1.15.21",
+    "ddgs>=9.16.0",
+    "fastapi>=0.141.1",
+    "gradio>=6.27.0",
+    "httpx>=0.28.1,<0.29",
+    "langchain>=1.4.0",
+    "langchain-openai>=1.6.2",
+    "langgraph>=1.2.11",
+    "loguru>=0.7.3",
+    "mcp>=1.28.1,<1.29",
+    "openai>=2.30.0,<3",
+    "openai-agents>=0.20.0",
+    "pandas>=3.0.5",
+    "pydantic>=2.11.9,<2.13",
+    "pypdf>=6.18.1",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.2,<2",
+    "requests>=2.34.2",
+    "rich>=13.7.0,<15",
+    "tenacity>=9.1.4",
+    "uvicorn>=0.53.0",
+]

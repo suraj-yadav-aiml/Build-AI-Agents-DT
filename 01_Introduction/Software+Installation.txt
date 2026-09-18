@@ -1,0 +1,47 @@
+Install some base packages :
+-------------------------
+
+uv add "openai<2" python-dotenv pydantic "rich<15"
+
+uv add fastapi uvicorn requests httpx
+
+uv add pandas pypdf beautifulsoup4
+
+uv add pytest loguru tenacity
+
+uv add openai-agents
+
+uv add langchain langchain-openai langgraph
+
+uv add "crewai<1.0" crewai-tools
+
+uv add mcp
+
+uv add gradio
+
+uv add --dev ruff black
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+openai
+python-dotenv
+pydantic
+rich
+fastapi
+uvicorn
+requests
+httpx
+pandas
+pypdf
+beautifulsoup4
+pytest
+loguru
+tenacity
+openai-agents
+langchain
+langchain-openai
+langgraph
+crewai
+crewai-tools
+mcp
+gradio

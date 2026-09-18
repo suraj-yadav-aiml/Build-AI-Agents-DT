@@ -1,0 +1,121 @@
+market_research_task:
+  description: >
+    Research the following product idea:
+
+    {product_idea}
+
+    Analyze the following areas:
+
+    1. Target audience
+       - Primary customer segments
+       - Customer characteristics
+       - Likely customer needs
+
+    2. Customer pain points
+       - Problems the product could solve
+       - Existing frustrations
+       - Unmet needs
+
+    3. Competitor landscape
+       - Direct competitors
+       - Indirect alternatives
+       - Competitor strengths
+       - Competitor weaknesses
+
+    4. Market trends
+       - Relevant industry trends
+       - Emerging customer behaviors
+       - Technology trends
+       - Market opportunities
+
+    5. Business opportunities
+       - Market gaps
+       - Potential differentiators
+       - Potential growth opportunities
+
+    Requirements:
+    - Separate observed facts from assumptions.
+    - Do not invent market statistics.
+    - Clearly identify uncertainty.
+    - Focus on insights that can influence launch strategy.
+    - Organize the findings clearly.
+
+  expected_output: >
+    A structured market research report containing target audience,
+    customer pain points, competitor analysis, market trends,
+    opportunities, and key strategic insights.
+
+  markdown: true
+
+
+strategy_task:
+  description: >
+    Create a product launch strategy for:
+
+    {product_idea}
+
+    Use the market research provided by the previous task.
+
+    Develop:
+
+    1. Product positioning
+    2. Core value proposition
+    3. Target audience strategy
+    4. Differentiation strategy
+    5. Pricing approach
+    6. Launch phases
+    7. Marketing channels
+    8. Launch timeline
+    9. Key launch risks
+    10. Success metrics
+
+    Requirements:
+    - Base recommendations on the available market research.
+    - Clearly connect strategy decisions to customer needs.
+    - Do not invent unsupported market data.
+    - Make the strategy practical for execution.
+    - Distinguish assumptions from research-backed insights.
+    - Prefer actionable recommendations over generic advice.
+
+  expected_output: >
+    A complete go-to-market strategy containing positioning,
+    value proposition, audience strategy, differentiation,
+    pricing approach, launch plan, timeline, risks, and success metrics.
+
+  markdown: true
+
+
+content_generation_task:
+  description: >
+    Create a marketing content package for:
+
+    {product_idea}
+
+    Use the market research and product launch strategy provided
+    by the previous tasks.
+
+    Generate:
+
+    1. Product tagline
+    2. Core marketing message
+    3. Launch announcement
+    4. Social media post
+    5. Launch email
+    6. Product description
+    7. Call to action
+
+    Requirements:
+    - Align the messaging with the product positioning.
+    - Focus on the target audience's needs and pain points.
+    - Clearly communicate the product's value.
+    - Avoid exaggerated or unsupported claims.
+    - Use clear and natural marketing language.
+    - Make each piece appropriate for its intended channel.
+    - Keep messaging consistent across all content.
+
+  expected_output: >
+    A professional product-launch marketing package containing
+    a tagline, core message, launch announcement, social post,
+    email campaign draft, product description, and call to action.
+
+  markdown: true

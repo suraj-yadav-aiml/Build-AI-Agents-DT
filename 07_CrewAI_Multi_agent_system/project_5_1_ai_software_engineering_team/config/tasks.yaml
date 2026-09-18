@@ -1,0 +1,73 @@
+code_generation_task:
+  description: >
+    Develop a complete Python solution for the following software requirement:
+
+    {user_requirement}
+
+    Requirements:
+    - Use clean and readable Python.
+    - Follow PEP 8 principles.
+    - Use meaningful names.
+    - Keep the implementation modular.
+    - Add concise comments where they improve understanding.
+    - Include appropriate error handling.
+    - Avoid unnecessary complexity.
+    - Keep the solution understandable for a beginner.
+    - Explain important implementation decisions.
+
+  expected_output: >
+    A complete Python solution with a concise explanation of the
+    implementation and important design decisions.
+
+  markdown: true
+
+
+code_review_task:
+  description: >
+    Review the Python solution produced by the developer.
+
+    Examine the implementation for:
+
+    - correctness
+    - readability
+    - maintainability
+    - naming
+    - code structure
+    - unnecessary complexity
+    - error handling
+    - performance
+    - security concerns
+    - Python best practices
+
+    Fix issues that can be safely improved.
+
+    Do not change the intended behavior of the solution.
+
+  expected_output: >
+    A reviewed and improved Python implementation followed by a concise
+    explanation of the important changes made.
+
+  markdown: true
+
+
+testing_task:
+  description: >
+    Create a comprehensive testing strategy for the reviewed Python code.
+
+    Include:
+
+    - happy-path test cases
+    - edge cases
+    - invalid input cases
+    - failure scenarios
+    - important regression cases
+
+    Where appropriate, provide executable pytest test cases.
+
+    Explain what each test validates and why it is important.
+
+  expected_output: >
+    A structured testing plan containing meaningful test cases,
+    pytest examples where appropriate, and concise explanations.
+
+  markdown: true
