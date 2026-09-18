@@ -1,0 +1,7 @@
+python-dotenv>=1.2.2,<2
+
+openai>=2.30.0,<3
+pydantic>=2.11.9,<2.13
+fastapi
+uvicorn
+httpx>=0.28.1,<0.29
