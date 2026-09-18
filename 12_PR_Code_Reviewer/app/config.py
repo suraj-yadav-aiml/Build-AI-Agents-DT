@@ -52,22 +52,22 @@ class Settings(BaseSettings):
     # ------------------------------------------------------------------
 
     # API key used when MODEL_PROVIDER=deepseek.
-    deepseek_api_key: str = Field(
-        ...,
-        validation_alias="DEEPSEEK_API_KEY",
-    )
+    # deepseek_api_key: str = Field(
+    #     ...,
+    #     validation_alias="DEEPSEEK_API_KEY",
+    # )
 
     # DeepSeek model used for code reviews.
-    deepseek_model_name: str = Field(
-        default="deepseek-flash",
-        validation_alias="DEEPSEEK_MODEL_NAME",
-    )
+    # deepseek_model_name: str = Field(
+    #     default="deepseek-flash",
+    #     validation_alias="DEEPSEEK_MODEL_NAME",
+    # )
 
     # DeepSeek exposes an OpenAI-compatible API.
-    deepseek_base_url: str = Field(
-        default="https://api.deepseek.com",
-        validation_alias="DEEPSEEK_BASE_URL",
-    )
+    # deepseek_base_url: str = Field(
+    #     default="https://api.deepseek.com",
+    #     validation_alias="DEEPSEEK_BASE_URL",
+    # )
 
     # ------------------------------------------------------------------
     # GitHub configuration
